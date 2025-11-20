@@ -62,6 +62,7 @@ This dashboard provides a Docker Desktop–style interface directly on your serv
 
 ## 📂 Directory Structure
 
+```
 ├── index.php # New overview dashboard
 ├── containers.php
 ├── images.php
@@ -76,7 +77,7 @@ This dashboard provides a Docker Desktop–style interface directly on your serv
 │ └── style.css # UI theme
 ├── compose-projects/ # Created automatically for compose stacks
 └── dashboard-settings.json # Auto-created for security settings
-
+```
 
 ---
 
@@ -94,6 +95,8 @@ This dashboard provides a Docker Desktop–style interface directly on your serv
 ```bash
 sudo usermod -aG docker www-data
 sudo systemctl restart apache2
+
+```
 
 🔧 Installation
 1. Clone or upload the dashboard into your web root:
