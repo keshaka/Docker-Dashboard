@@ -36,9 +36,10 @@ $activePage = 'home';
                         List, filter and control containers (start, stop, restart, remove, logs, stats).
                     </div>
                     <div class="card-footer">
-                        <a href="containers.php" class="card-link">Open Containers →</a>
-                        <span class="card-meta">Like Docker Desktop containers tab.</span>
+                        <a href="images.php" class="card-link">Open Images →</a>
+                        <span class="card-meta">docker images, pull, rmi…</span>
                     </div>
+
                 </div>
 
                 <div class="card">

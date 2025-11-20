@@ -218,21 +218,44 @@ a {
 }
 
 .card-footer {
-    margin-top: 6px;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;        /* stack button + text */
+    align-items: flex-start;        /* left-align everything */
+    gap: 6px;                       /* spacing between elements */
     font-size: 0.75rem;
+    color: var(--muted);
 }
 
+
+/* FIXED: Uniform card buttons */
 .card-link {
-    font-size: 0.8rem;
-    padding: 5px 9px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 18px;               /* consistent button height */
+    min-height: 40px;                /* prevents shrinking */
     border-radius: 999px;
+
     border: 1px solid rgba(56,189,248,0.7);
     background: var(--accent-soft);
     color: var(--accent);
+
+    font-size: 0.86rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    white-space: nowrap;             /* keeps one-line text */
+    transition: background 0.15s, color 0.15s, box-shadow 0.15s;
 }
+
+.card-link:hover {
+    background: rgba(56,189,248,0.25);
+    color: #7dd3fc;
+    box-shadow: 0 0 14px rgba(56,189,248,0.4);
+}
+
 
 .card-meta {
     color: var(--muted);
